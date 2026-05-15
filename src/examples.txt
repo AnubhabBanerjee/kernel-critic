@@ -1,0 +1,9 @@
+1. The Baseline: 2D Vector Addition"Implement a basic CUDA kernel for 2D vector addition ($C = A + B$). The vectors are represented as 1D arrays of length $N \times M$. Use a simple 2D grid/block configuration and ensure the thread indices correctly map to the array elements."
+
+2. Memory Optimization: Matrix Multiplication with Tiling"Write an optimized 2D Matrix Multiplication kernel. Use shared memory tiling to reduce global memory bandwidth bottlenecks. The tiles should be sized to fit within the shared memory limits of a standard NVIDIA SM, and the code must handle cases where matrix dimensions are not multiples of the tile size."
+
+3. LLM Specialization: Softmax Kernel"Create a high-performance CUDA kernel for the Softmax activation function, specifically optimized for large hidden layer dimensions common in BERT-like models. Use warp-level primitives (like __shfl_down_sync) to perform efficient reductions across the hidden dimension and minimize synchronization overhead."
+
+4. Hardware-Aware Tuning: Occupancy Optimization"Optimize a 1D Stencil operation kernel for maximum occupancy. Analyze the register usage and shared memory requirements. Suggest an optimal block_size that is a multiple of 32 and use a grid size that maximizes SM throughput on an Ampere-architecture GPU."
+
+5. The Stress Test: Redundant Calculation Elimination"Implement a kernel for a custom regression loss function that involves multiple exponential and logarithmic terms. Optimize the kernel by utilizing constant memory for static parameters and ensure that common sub-expressions are calculated once and stored in registers to minimize latency."
