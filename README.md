@@ -21,6 +21,10 @@ KernelCritic operates as a state-aware graph with a feedback edge from validatio
 
 The graph is **not** a DAG: the `Critic → Generator` feedback edge is intentional and is what makes the system "self-healing" rather than one-shot.
 
+You can dump the live graph as a PNG after a successful run:
+
+![KernelCritic execution flow](task_execution_flow.png)
+
 ## 🛠️ Multi-Backend Infrastructure
 
 Designed for portability across local, corporate, and cloud environments via a single `ACTIVE_ENV` switch:
