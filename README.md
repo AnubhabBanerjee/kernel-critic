@@ -1,5 +1,9 @@
-**Copyright (c) 2026 Anubhab Banerjee (AnubhabBanerjee/kernel-critic)**
-**All rights reserved. No part of this repository may be used, redistributed, or modified in any form or by any means without the prior written permission of the author.**
+**License notice**
+This project is **source-available** under the **[PolyForm Noncommercial License 1.0.0](LICENSE)** — free for personal, research, teaching, and internal-evaluation use.
+
+**Any commercial use, redistribution as part of a commercial product, or paid hosted deployment requires a separate commercial license.** See [`COMMERCIAL.md`](COMMERCIAL.md) or contact `https://github.com/AnubhabBanerjee`.
+
+Unauthorized commercial use or redistribution is a violation of the license terms.
 
 ---
 
